@@ -1,0 +1,80 @@
+
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/8098743.jpg'); /* Replace 'your-image.jpg' with the image file path */
+  background-size: cover; /* This ensures the image covers the entire background */
+  background-position: center center; /* Center the image horizontally and vertically */
+  background-attachment: fixed; /* Optional: Fixed background (stays in place while scrolling) */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+/*  background-color: #f0f0f0; /* Optional background color for the body */*/
+}
+
+.centered-text {
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1 {
+/*	color:	Orange;*/
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff; /* Text color */
+	text-shadow: 0 0 10px #00f, 0 0 20px #0f0, 0 0 30px #f00; /* Define the glow effect */
+	animation: glow 2s linear infinite; /* Apply the glow animation */
+}
+
+.buffer {
+	height: 50px;
+}
+
+hr {
+	color: darkred;
+	border-width: 2px;
+	max-width: 65px;
+	margin: 10px auto;
+}
+
+
+.btn {
+	font-weight: 700;
+	border-radius: 30px;
+	text-transform: uppercase;
+}
+
+.btn-xl {
+	padding: 1rem 2rem;
+}
+
+.btn-danger:hover {
+	background-color: #4FFBDF;
+	border-color: #4FFBDF;
+	border-width: 3px;
+}
+
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #00f, 0 0 20px #0f0, 0 0 30px #f00;
+  }
+  50% {
+    text-shadow: 0 0 20px #00f, 0 0 30px #0f0, 0 0 40px #f00;
+  }
+  100% {
+    text-shadow: 0 0 10px #00f, 0 0 20px #0f0, 0 0 30px #f00;
+  }
+}
